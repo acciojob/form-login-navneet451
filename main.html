@@ -12,11 +12,16 @@
 </head>
 
 <body>
-	<form id="form1" onsubmit="getFormvalue()">
-		First name: <input type="text" name="fname"><br>
-		Last name: <input type="text" name="lname"><br>
-		<input type="submit" value="Submit">
-	</form>
+	<form onsubmit="event.preventDefault(); getFormvalue();">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="First Name"><br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="Last Name"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
 	
     <script type="text/javascript" src="./script.js">
 </script>
